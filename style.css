@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #121212;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1E1E1E;
+    padding: 15px 30px;
+    position: relative;
+}
+
+.logo{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+    
+}
+
+.nav-links a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 6px 12px;
+    border: 2px solid aquamarine;
+    border-radius: 10px;
+}
+
+.nav-links a:hover{
+    color: aquamarine;
+}
+
+@media (max-width:768px){
+
+  
+
+   .nav-links{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #333;
+    flex-direction: column;
+    display: none;
+    z-index: 1000;
+   }
+
+   #menu-toggle:checked ~ .nav-links {
+        display: flex;
+   }
+
+   .nav-links li{
+    text-align: center;
+    margin: 15px 0;
+   }
+
+   .hamburger {
+        display: block !important ;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+
+   .mainarea{
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+   
+   }
+
+   .buttons{
+    flex-direction: column;
+    text-align: center;
+   }
+
+   .myname{
+    font-size: 90px;
+    margin-right: 45px; }
+
+    .description{
+    
+    margin-right: 40px;
+}
+
+.description2{
+    
+    margin-right: 40px;
+}
+
+.shortdes{
+  
+     margin-right: 40px;
+}
+
+.shortdes1{
+    
+     margin-right: 40px;
+}
+
+.social{
+    margin-right: 85px;
+}
+
+.callme{
+    margin-right: 85px;
+}
+
+ 
+
+
+
+}
+
+.main-img{
+    margin-top: 20px;
+    margin-left: 30px;
+    height: 400px;
+    object-fit:cover;
+    display:inline-block;
+    
+}
+
+
+
+.mainarea{
+    display: flex;
+    align-items: center;
+     background-color:#121212;
+
+}
+
+.mainarea ul{
+    margin-left: 90px;
+}
+
+.hi{
+    color: aliceblue;
+    font-size: 60px;
+}
+
+.myname{
+    font-size: 100px;
+    color: aquamarine;
+    font-weight: bolder;
+}
+
+.description{
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.description2{
+    color: aquamarine;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.shortdes{
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.shortdes1{
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.sml{
+    width: 40px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #121212;
+}
+
+.social{
+  margin-top: 40px;
+  margin-left: 140px;
+  display: flex;
+  gap: 30px;
+}
+
+.callme{
+    color: white;
+    display: flex;
+    gap: 50px;
+    margin-left: 120px;
+}
+
+.callme li{
+    font-size: 30px;
+    border: 3px solid aquamarine;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding: 6px 12px;
+    margin-bottom: 20px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
